@@ -28,19 +28,20 @@ import time
 import timeit
 import csv
 from matplotlib import pyplot as plt
-from Tkinter import Tk
-from tkFileDialog import askopenfilenames, askopenfilename
-import tkMessageBox
+from tkinter.filedialog import askopenfilenames, askopenfilename
+from tkinter import messagebox
 import scipy
 from scipy.signal import kaiserord, lfilter, firwin, freqz
 import openpiv.tools
-import openpiv.process
+import openpiv.pyprocess
 #closeall = plt.close('all')
 
 
 #------------------------------------------------------------
 # open image
 def open_image():
+    from tkinter import Tk
+    from tkinter import ttk
     Tk().withdraw()
     file_opt = options = {}
     #options['initialdir'] = '/home/jack/Pictures'

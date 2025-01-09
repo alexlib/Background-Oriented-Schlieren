@@ -28,8 +28,7 @@ import time
 import timeit
 import csv
 from matplotlib import pyplot as plt
-from Tkinter import Tk
-from tkFileDialog import askopenfilenames, askopenfilename
+from tkinter.filedialog import askopenfilenames, askopenfilename
 import tkMessageBox
 import scipy
 from scipy.signal import kaiserord, lfilter, firwin, freqz
